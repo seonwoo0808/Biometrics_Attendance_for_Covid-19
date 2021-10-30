@@ -24,6 +24,6 @@ This is an attendance book that integrates online and offline.
 # 지문인식
 ![3](https://user-images.githubusercontent.com/59224587/139520595-da96c91e-22cc-402b-a260-5a1f47c52375.PNG)
 
-해당 프로젝트들을 참고하여 변형하였습니다
-https://github.com/kairess/fingerprint_recognition
-https://wikidocs.net/79827
+- 해당 프로젝트들을 참고하여 변형하였습니다
+    1.https://github.com/kairess/fingerprint_recognition
+    2.https://wikidocs.net/79827
