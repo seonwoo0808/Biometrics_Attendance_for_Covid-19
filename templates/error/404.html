@@ -1,0 +1,21 @@
+<!-- © 2021 정선우 <seonwoo0808@kakao.com>
+templates\error\404.html -->
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/404.css')}}"/>
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico')}}"/>
+  <title>404 - 학생 출석 종합 관리 시스템</title>
+</head>
+<body>
+  <div class="centered">
+    <img id= "oops"src="{{ url_for('static', filename='images/oops.png') }}" alt="여기가 어디죠.....?" title="여기가 어디죠.....?" />
+    <h1>404</h1>
+    <h3>길을 잘못 들었나 보군요!</h3>
+  </div>
+</body>
+</html>

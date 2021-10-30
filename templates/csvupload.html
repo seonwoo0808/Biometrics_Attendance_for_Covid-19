@@ -1,0 +1,17 @@
+<!-- © 2021 정선우 <seonwoo0808@kakao.com>
+templates\csvupload.html -->
+
+{% extends 'base.html'%}
+{% block content %} 
+{{id}}
+<link rel="stylesheet" href="/static/css/csv.css">
+   <form class="form" action = "/csvUpload" method = "POST" enctype = "multipart/form-data">
+      <div class="file-upload-wrapper" data-text="CSV 파일을 업로드 하세요" style="margin-top: 10rem; margin-left: 15rem; box-shadow: 0px 30px 30px rgba(0,0,0,.30); ">
+      <input type="file" class="file-upload-field" name = "csv" value="">
+      </div>
+      <div class="file-upload-wrapper_2" data-text="파일올리기" style="margin-left: 15rem; box-shadow: 0px 30px 30px rgba(0,0,0,.30); ">
+         <input type = "submit" id="button"/>
+      </div>
+   </form> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="{{ url_for('static' ,filename ='js/csv.js')}}"></script>
+{% endblock %}

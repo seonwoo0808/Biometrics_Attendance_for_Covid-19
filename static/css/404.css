@@ -1,0 +1,12 @@
+#oops {
+    width: 500px;
+    height: 313px;
+}
+.centered { 
+    display: table; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+

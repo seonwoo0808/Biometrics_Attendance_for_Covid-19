@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+.sw-logo{
+    width: 150px;
+    height: 75px;
+    }
+.area{
+    margin:10px;
+    text-align: center;
+    display:table-cell;
+    vertical-align:middle;
+    }
+hr.divder{
+   margin-top: 0rem;
+   margin-bottom: 0rem;
+}
+
+#nav_item{
+    font-size:17px;
+    font-weight: 300;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#button {
+    border: none;
+    text-align:center;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 6px 25px 0px 20px;
+    margin: 10px 8px 0px 14px;
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    width: 375px; height: 35px; 
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+    background-color: #f55776; 
+    -webkit-box-shadow: 0 3px rgba(58,87,175,.75); 
+    -moz-box-shadow: 0 3px rgba(58,87,175,.75); 
+    box-shadow: 0 3px rgba(255, 107, 139,.75);
+    transition: all 0.1s linear 0s; 
+    top: 0px;
+    position: relative;
+  }
+  

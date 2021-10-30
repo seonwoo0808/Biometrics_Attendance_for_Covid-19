@@ -1,0 +1,38 @@
+<!-- © 2021 정선우 <seonwoo0808@kakao.com>
+templates\sign_in_2.html -->
+{% extends 'base.html'%}
+{% block content %}
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+    <link href="/static/css/sign_up.css" rel="stylesheet">
+    <div class="testbox_1">
+        <h2>2단계</h2>
+
+        <form action="/sign_up/2" method="POST">
+            <p>학교: {{school_name}} , 소재지: {{school_location}}</p>
+            <label id="icon" for="name"><i class="icon-user"></i></label>
+            <input type="text" name="id" id="name" placeholder="ID" required/>
+            <label id="icon" for="name"><i class="icon-user"></i></label>
+            <input type="text" name="name" id="name" placeholder="이름" required/>
+            <label id="icon" for="password"><i class="icon-shield"></i></label>
+            <input type="password" name="password" id="password" placeholder="PW" required/>
+            <label id="icon" for="name"><i class="icon-envelope "></i></label>
+            <input type="text" name="email" id="email" placeholder="이메일" required/>
+            <label id="icon" for="name"><i class="icon-user"></i></label>
+            <input type="integer" name="grade" id="grade" placeholder="학년" required/>
+            <label id="icon" for="name"><i class="icon-user"></i></label>
+            <input type="integer" name="user_class" id="user_class" placeholder="반" required/>
+            <label id="icon" for="name"><i class="icon-user"></i></label>
+            <input type="integer" name="no" id="no" placeholder="번호">
+            <div class="role">
+                <input type="radio" value="teacher" id="teacher" name="role" checked/>
+                <label for="teacher" class="radio" chec>교사</label>
+                <input type="radio" value="student" id="student" name="role" checked/>
+                <label for="student" class="radio" chec>학생</label>
+            </div>
+            <button type="submit" class="button">가입</button>
+        </form>
+{% endblock %}
+
+
+

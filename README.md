@@ -1,2 +1,3 @@
-# Biometrics_Attendance_for_Covid-19
-This is an attendance book that integrates online and offline.
+# portfolio-for-Korea-Digital-Media-High-School
+this project will be submitted to Korea Digital Media High School
+

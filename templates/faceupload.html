@@ -1,0 +1,60 @@
+<!-- © 2021 정선우 <seonwoo0808@kakao.com>
+templates\faceupload.html -->
+{% extends 'base.html'%}
+{% block content %}
+ <!-- CSS -->
+ <style>
+    #my_camera{
+        width: 480px;
+        height: 360px;
+        border: 1px solid black;
+    }
+	</style>
+
+	<div id="my_camera"></div>
+    <br>
+	<button class='btn btn-primary' onClick="take_snapshot()">촬영 시작하기</button>
+    <form action="" method="POST" class="post-form">
+        {% for i in range(0,10) %}
+        <input type="hidden" name="result{{i}}" id="result{{i}}">
+        {% endfor %}
+        <br>
+        <input type="submit" class='btn btn-primary' value="전송">  
+    </form>
+
+	<!-- 웹캠 js 오픈소스 -->
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static' ,filename ='js/webcamjs/webcam.min.js') }}"></script>
+	<script language="JavaScript">
+        $( document ).ready(function() {
+            Webcam.set({
+			width: 480,
+			height: 360,
+			image_format: 'jpeg',
+			jpeg_quality: 80
+		});
+		Webcam.attach( '#my_camera' );
+        alert("웹캠로드됨")
+        });
+        String.prototype.format = function() {
+            var formatted = this;
+            for( var arg in arguments ) {
+                formatted = formatted.replace("{" + arg + "}", arguments[arg]);
+            }
+            return formatted;
+        };
+
+		function take_snapshot() {
+            var list = new Array();
+            for (let i=0; i < 10; i++) {
+                Webcam.snap(function(data_uri){list[i] = data_uri;} );
+            }
+            var params = {}
+            for (let i=0; i < 10; i++) {
+                $('#result{0}'.format(i)).val(list[i]);
+                
+            }
+            alert("사진 10장을 찍었습니다");
+		}
+	</script>
+{% endblock %}
