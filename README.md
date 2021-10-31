@@ -8,6 +8,7 @@ This is an attendance book that integrates online and offline.
     2. Maria DB or MySQL
     3. the module be listed in "requirement.txt"
     4. RSA crt and key formatted as ".pem"
+    5. Windows 10 or Window Server 2012 ~ 2019
 
 - Notice
     1. This is Korean Document. If you need English ver, raise a issue which require me to upload a Eng ver.
