@@ -18,6 +18,11 @@ This is an attendance book that integrates online and offline.
 
 
 # 들어간 기술 요약
+- Stack
+    1. Python - Flask, Tensorflow, OpenCV
+    2. HTML/CSS
+    3. JS
+
 ![1](https://user-images.githubusercontent.com/59224587/139520591-9e0e64d6-a68f-4298-8f8c-33edf93b2d88.PNG)
 
 # 얼굴 인식
