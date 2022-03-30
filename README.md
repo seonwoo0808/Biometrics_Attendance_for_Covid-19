@@ -17,11 +17,6 @@ This is an attendance book that integrates online and offline.
     4. DB_structure will not open to the public due to security factor
 
 
-# 들어간 기술 요약
-- Stack
-    1. Python - Flask, Tensorflow, OpenCV
-    2. HTML/CSS
-    3. JS
 ## 1. **프로그램 개요**
 
  온라인 수업의 경우 얼굴 인식 방식을 활용하며, 오프라인의 경우 지문 인식 방식을 적용하여 출석 정보를 자동으로 집계 및 데이터 저장, 열람이 가능한 디지털 시대에 적합한 디지털 출석부
