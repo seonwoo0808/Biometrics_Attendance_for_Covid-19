@@ -116,7 +116,7 @@ This is an attendance book that integrates online and offline.
 
 ## 8. 개발 과정에서 참고한 문헌
 
-- ****점프 투 플라스크 (저자: 박응용)
+- 점프 투 플라스크 (저자: 박응용)
 - Fingerprint recognition using CNN ([https://github.com/kairess/fingerprint_recognition](https://github.com/kairess/fingerprint_recognition))
 - 토닥토닥 파이썬 - 지문 인식을 위한 딥러닝 (텐서플로우 v2) ([https://wikidocs.net/book/4522](https://wikidocs.net/book/4522))
 - Face recognition using OpenCV and Python: A beginner's guide ([https://www.superdatascience.com/blogs/opencv-face-recognition](https://www.superdatascience.com/blogs/opencv-face-recognition))
