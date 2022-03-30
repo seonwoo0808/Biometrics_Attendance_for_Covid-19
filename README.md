@@ -14,7 +14,6 @@ This is an attendance book that integrates online and offline.
     1. This is Korean Document. If you need English ver, raise a issue which require me to upload a Eng ver.
     2. you need to replace db_pw variable in code file manually
     3. you need to replace RSA crt and key file manually
-    4. DB_structure will not open to the public due to security factor
 
 
 ## 1. **프로그램 개요**
